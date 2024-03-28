@@ -1,5 +1,4 @@
 name: Create Conda Environment
-
 on:
   push:
     branches:
