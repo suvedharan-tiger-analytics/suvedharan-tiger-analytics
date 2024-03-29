@@ -71,8 +71,8 @@ for set_ in (strat_train_set, strat_test_set):
 housing = strat_train_set.copy()
 housing.plot(kind="scatter", x="longitude", y="latitude")
 housing.plot(kind="scatter", x="longitude", y="latitude", alpha=0.1)
-corr_matrix = housing.corr()
-corr_matrix["median_house_value"].sort_values(ascending=False)
+# corr_matrix = housing.corr()
+# corr_matrix["median_house_value"].sort_values(ascending=False)
 housing["rooms_per_household"] = housing["total_rooms"] / housing["households"]
 housing["bedrooms_per_room"] = housing["total_bedrooms"] / \
     housing["total_rooms"]
