@@ -1,24 +1,24 @@
 name: Create Conda Environment
+
 on:
   push:
     branches:
       - main
 
-runs-on: ubuntu-latest
-defaults:
-  run:
-    shell: bash -el {0}
-steps:
-  - name: Checkout Repository
-    uses: actions/checkout@v4
+jobs:
+  build:
 
-  - name: Setup Miniconda and Create Environment
-    uses: conda-incubator/setup-miniconda@v3
-    with:
-      activate-environment: anaconda-client-env
-      environment-file: environment.yml
+    runs-on: ubuntu-latest
 
-  - name: Display Conda Information
-    run: |
-      conda info
-      conda list
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Conda
+      uses: conda-incubator/setup-miniconda@v2
+
+    - name: Create Conda environment
+      run: conda env create -f environment.yml
+
+    - name: Activate Conda environment
+      run: conda activate myenv

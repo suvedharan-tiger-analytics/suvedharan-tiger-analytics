@@ -1,4 +1,4 @@
-name: anaconda-client-env  # Name of the Conda environment
+name: myenv  # Name of the Conda environment
 channels:  # Channels to search for packages
   - defaults
   - conda-forge
