@@ -26,6 +26,10 @@ jobs:
         source ~/.bashrc
         conda activate mle-dev
 
-    - name: Execute commands within Conda environment
+    - name: Execute python script on flake8
+      run: |
+        conda run -n mle-dev flake8 nonstandardcode.py
+
+    - name: Execute python script within Conda environment
       run: |
         conda run -n mle-dev python nonstandardcode.py
