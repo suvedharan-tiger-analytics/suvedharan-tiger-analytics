@@ -4,12 +4,9 @@ on:
   push:
     branches:
       - main
-
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
@@ -23,5 +20,7 @@ jobs:
     - name: Initialize Conda
       run: conda init 
 
-    - name: Activate Conda environment
-      run: conda activate myenv
+    - name: Execute commands within Conda environment
+      run: |
+        source $HOME/miniconda/etc/profile.d/conda.sh
+        conda activate myenv
