@@ -4,9 +4,12 @@ on:
   push:
     branches:
       - main
+
 jobs:
   build:
+
     runs-on: ubuntu-latest
+
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
@@ -17,11 +20,11 @@ jobs:
     - name: Create Conda environment
       run: conda env create -f environment.yml
 
-    - name: Initialize Conda
-      run: conda init 
-
-    - name: activate the conda
-      run: conda activate myenv
+    - name: Initialize Conda and activate the environment
+      run: |
+        conda init bash
+        source ~/.bashrc
+        conda activate myenv
 
     - name: Execute commands within Conda environment
       run: |
