@@ -22,4 +22,4 @@ jobs:
 
     - name: Execute commands within Conda environment
       run: |
-        conda run -n myenv echo "Hello, World!"
+        conda run -n myenv conda list
