@@ -1,4 +1,11 @@
-dependencies:
-  - numpy=1.18.1
-  - pandas=1.0.1
-  - scikit-learn=0.22.1
+name: anaconda-client-env  # Name of the Conda environment
+channels:  # Channels to search for packages
+  - defaults
+  - conda-forge
+dependencies:  # List of packages to install
+  - python=3.8  # Python version
+  - numpy=1.20.3  # Example package with specific version
+  - pandas=1.3.3  # Example package with specific version
+  - matplotlib=3.4.3  # Example package with specific version
+  - scikit-learn=0.24.2  # Example package with specific version
+  - seaborn=0.11.2  # Example package with specific version
