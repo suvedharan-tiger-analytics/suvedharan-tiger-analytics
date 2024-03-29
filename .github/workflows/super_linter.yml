@@ -22,5 +22,4 @@ jobs:
 
     - name: Execute commands within Conda environment
       run: |
-        source $HOME/miniconda/etc/profile.d/conda.sh
-        conda activate myenv
+        conda run -n myenv echo "Hello, World!"
