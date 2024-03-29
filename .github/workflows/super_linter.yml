@@ -21,7 +21,7 @@ jobs:
       run: conda env create -f environment.yml
 
     - name: Initialize Conda
-      run: conda init bash
+      run: conda init 
 
     - name: Activate Conda environment
       run: conda activate myenv
