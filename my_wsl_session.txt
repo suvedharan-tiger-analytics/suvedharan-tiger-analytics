@@ -1,0 +1,241 @@
+(base) admin123@TIGER01189:/d/suvedharan/Assignment-1/mle-training$ conda init
+no change     /home/admin123/anaconda3/condabin/conda
+no change     /home/admin123/anaconda3/bin/conda
+no change     /home/admin123/anaconda3/bin/conda-env
+no change     /home/admin123/anaconda3/bin/activate
+no change     /home/admin123/anaconda3/bin/deactivate
+no change     /home/admin123/anaconda3/etc/profile.d/conda.sh
+no change     /home/admin123/anaconda3/etc/fish/conf.d/conda.fish
+no change     /home/admin123/anaconda3/shell/condabin/Conda.psm1
+no change     /home/admin123/anaconda3/shell/condabin/conda-hook.ps1
+no change     /home/admin123/anaconda3/lib/python3.10/site-packages/xontrib/conda.xsh
+no change     /home/admin123/anaconda3/etc/profile.d/conda.csh
+no change     /home/admin123/.bashrc
+No action taken.
+(base) admin123@TIGER01189:/d/suvedharan/Assignment-1/mle-training$ conda env list
+# conda environments:
+#
+base                  *  /home/admin123/anaconda3
+
+(base) admin123@TIGER01189:/d/suvedharan/Assignment-1/mle-training$ ll
+total 1021408
+drwxrwxrwx 1 admin123 admin123      4096 Mar 27 17:15 ./
+drwxrwxrwx 1 admin123 admin123      4096 Mar 26 18:10 ../
+drwxrwxrwx 1 admin123 admin123      4096 Mar 27 16:20 .git/
+-rwxrwxrwx 1 admin123 admin123       105 Mar 26 18:06 .gitignore*
+drwxrwxrwx 1 admin123 admin123      4096 Mar 26 12:45 .vscode/
+-rw-r--r-- 1 admin123 admin123 901858012 Mar 20  2023 Anaconda3-2023.03-Linux-x86_64.sh
+-rwxrwxrwx 1 admin123 admin123 144041912 Mar 27 17:14 Miniconda3-latest-Linux-x86_64.sh*
+-rwxrwxrwx 1 admin123 admin123      1511 Mar 26 18:00 README.md*
+drwxrwxrwx 1 admin123 admin123      4096 Mar 26 13:05 datasets/
+-rwxrwxrwx 1 admin123 admin123      1068 Mar 26 18:06 environment.yml*
+-rwxrwxrwx 1 admin123 admin123      6899 Mar 27 14:10 nonstandardcode.py*
+(base) admin123@TIGER01189:/d/suvedharan/Assignment-1/mle-training$ conda env create -f environment.yml
+Collecting package metadata (repodata.json): done
+Solving environment: failed
+
+ResolvePackageNotFound:
+  - vs2015_runtime==14.27.29016=h5e58377_2
+  - libffi==3.4.4=hd77b12b_0
+  - ca-certificates==2024.3.11=haa95532_0
+  - tk==8.6.12=h2bbff1b_0
+  - python==3.11.8=he1021f5_0
+  - zlib==1.2.13=h8cc25b3_0
+  - xz==5.4.6=h8cc25b3_0
+  - setuptools==68.2.2=py311haa95532_0
+  - sqlite==3.41.2=h2bbff1b_0
+  - vc==14.2=h21ff451_1
+  - pip==23.3.1=py311haa95532_0
+  - wheel==0.41.2=py311haa95532_0
+  - bzip2==1.0.8=h2bbff1b_5
+  - openssl==3.0.13=h2bbff1b_0
+
+(base) admin123@TIGER01189:/d/suvedharan/Assignment-1/mle-training$ conad env list
+conad: command not found
+(base) admin123@TIGER01189:/d/suvedharan/Assignment-1/mle-training$ conda env list
+# conda environments:
+#
+base                  *  /home/admin123/anaconda3
+
+(base) admin123@TIGER01189:/d/suvedharan/Assignment-1/mle-training$ conda env create -f environment.yml
+Collecting package metadata (repodata.json): done
+Solving environment: failed
+
+ResolvePackageNotFound:
+  - openssl==3.0.13=h2bbff1b_0
+  - python==3.11.8=he1021f5_0
+  - vs2015_runtime==14.27.29016=h5e58377_2
+  - ca-certificates==2024.3.11=haa95532_0
+  - sqlite==3.41.2=h2bbff1b_0
+  - bzip2==1.0.8=h2bbff1b_5
+  - xz==5.4.6=h8cc25b3_0
+  - vc==14.2=h21ff451_1
+  - pip==23.3.1=py311haa95532_0
+  - tk==8.6.12=h2bbff1b_0
+  - wheel==0.41.2=py311haa95532_0
+  - setuptools==68.2.2=py311haa95532_0
+  - libffi==3.4.4=hd77b12b_0
+  - zlib==1.2.13=h8cc25b3_0
+
+(base) admin123@TIGER01189:/d/suvedharan/Assignment-1/mle-training$ conda env create -f environment.yml
+Warning: you have pip-installed dependencies in your environment file, but you do not list pip itself as one of your conda dependencies.  Conda may not use the correct pip to install your packages, and they may end up in the wrong place.  Please add an explicit pip dependency.  I'm adding one for you, but still nagging you.
+Collecting package metadata (repodata.json): done
+Solving environment: done
+
+
+==> WARNING: A newer version of conda exists. <==
+  current version: 23.1.0
+  latest version: 24.3.0
+
+Please update conda by running
+
+    $ conda update -n base -c defaults conda
+
+Or to minimize the number of packages updated during conda update use
+
+     conda install conda=24.3.0
+
+
+
+Downloading and Extracting Packages
+
+Preparing transaction: done
+Verifying transaction: done
+Executing transaction: done
+Installing pip dependencies: | Ran pip subprocess with arguments:
+['/home/admin123/anaconda3/envs/mle-dev/bin/python', '-m', 'pip', 'install', '-U', '-r', '/d/suvedharan/Assignment-1/mle-training/condaenv.fiaogdar.requirements.txt', '--exists-action=b']
+Pip subprocess output:
+Collecting contourpy==1.2.0 (from -r /d/suvedharan/Assignment-1/mle-training/condaenv.fiaogdar.requirements.txt (line 1))
+  Downloading contourpy-1.2.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (5.8 kB)
+Collecting cycler==0.12.1 (from -r /d/suvedharan/Assignment-1/mle-training/condaenv.fiaogdar.requirements.txt (line 2))
+  Downloading cycler-0.12.1-py3-none-any.whl.metadata (3.8 kB)                                                                
+Collecting fonttools==4.50.0 (from -r /d/suvedharan/Assignment-1/mle-training/condaenv.fiaogdar.requirements.txt (line 3))    
+  Downloading fonttools-4.50.0-cp312-cp312-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (159 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 159.4/159.4 kB 1.1 MB/s eta 0:00:00
+Collecting joblib==1.3.2 (from -r /d/suvedharan/Assignment-1/mle-training/condaenv.fiaogdar.requirements.txt (line 4))        
+  Downloading joblib-1.3.2-py3-none-any.whl.metadata (5.4 kB)
+Collecting kiwisolver==1.4.5 (from -r /d/suvedharan/Assignment-1/mle-training/condaenv.fiaogdar.requirements.txt (line 5))    
+  Downloading kiwisolver-1.4.5-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.4 kB)
+Collecting matplotlib==3.8.3 (from -r /d/suvedharan/Assignment-1/mle-training/condaenv.fiaogdar.requirements.txt (line 6))    
+  Downloading matplotlib-3.8.3-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (5.8 kB)
+Collecting numpy==1.26.4 (from -r /d/suvedharan/Assignment-1/mle-training/condaenv.fiaogdar.requirements.txt (line 7))        
+  Downloading numpy-1.26.4-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (61 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 61.0/61.0 kB 2.2 MB/s eta 0:00:00
+Collecting packaging==24.0 (from -r /d/suvedharan/Assignment-1/mle-training/condaenv.fiaogdar.requirements.txt (line 8))      
+  Downloading packaging-24.0-py3-none-any.whl.metadata (3.2 kB)
+Collecting pandas==2.2.1 (from -r /d/suvedharan/Assignment-1/mle-training/condaenv.fiaogdar.requirements.txt (line 9))        
+  Downloading pandas-2.2.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (19 kB)
+Collecting pillow==10.2.0 (from -r /d/suvedharan/Assignment-1/mle-training/condaenv.fiaogdar.requirements.txt (line 10))      
+  Downloading pillow-10.2.0-cp312-cp312-manylinux_2_28_x86_64.whl.metadata (9.7 kB)
+Collecting pyparsing==3.1.2 (from -r /d/suvedharan/Assignment-1/mle-training/condaenv.fiaogdar.requirements.txt (line 11))    
+  Downloading pyparsing-3.1.2-py3-none-any.whl.metadata (5.1 kB)
+Collecting python-dateutil==2.9.0.post0 (from -r /d/suvedharan/Assignment-1/mle-training/condaenv.fiaogdar.requirements.txt (line 12))
+  Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+Collecting pytz==2024.1 (from -r /d/suvedharan/Assignment-1/mle-training/condaenv.fiaogdar.requirements.txt (line 13))        
+  Downloading pytz-2024.1-py2.py3-none-any.whl.metadata (22 kB)
+Collecting scikit-learn==1.4.1.post1 (from -r /d/suvedharan/Assignment-1/mle-training/condaenv.fiaogdar.requirements.txt (line 14))
+  Downloading scikit_learn-1.4.1.post1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (11 kB)
+Collecting scipy==1.12.0 (from -r /d/suvedharan/Assignment-1/mle-training/condaenv.fiaogdar.requirements.txt (line 15))       
+  Downloading scipy-1.12.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (60 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 60.4/60.4 kB 2.7 MB/s eta 0:00:00
+Collecting six==1.16.0 (from -r /d/suvedharan/Assignment-1/mle-training/condaenv.fiaogdar.requirements.txt (line 16))
+  Downloading six-1.16.0-py2.py3-none-any.whl.metadata (1.8 kB)
+Collecting sixer==1.6.1 (from -r /d/suvedharan/Assignment-1/mle-training/condaenv.fiaogdar.requirements.txt (line 17))        
+  Downloading sixer-1.6.1-py3-none-any.whl.metadata (13 kB)
+Collecting threadpoolctl==3.4.0 (from -r /d/suvedharan/Assignment-1/mle-training/condaenv.fiaogdar.requirements.txt (line 18))
+  Downloading threadpoolctl-3.4.0-py3-none-any.whl.metadata (13 kB)
+Collecting tzdata==2024.1 (from -r /d/suvedharan/Assignment-1/mle-training/condaenv.fiaogdar.requirements.txt (line 19))      
+  Downloading tzdata-2024.1-py2.py3-none-any.whl.metadata (1.4 kB)
+Downloading contourpy-1.2.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (303 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 303.9/303.9 kB 2.3 MB/s eta 0:00:00
+Downloading cycler-0.12.1-py3-none-any.whl (8.3 kB)
+Downloading fonttools-4.50.0-cp312-cp312-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (4.9 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.9/4.9 MB 3.4 MB/s eta 0:00:00
+Downloading joblib-1.3.2-py3-none-any.whl (302 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 302.2/302.2 kB 3.7 MB/s eta 0:00:00
+Downloading kiwisolver-1.4.5-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (1.5 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.5/1.5 MB 3.6 MB/s eta 0:00:00
+Downloading matplotlib-3.8.3-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (11.6 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 11.6/11.6 MB 4.2 MB/s eta 0:00:00
+Downloading numpy-1.26.4-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (18.0 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 18.0/18.0 MB 2.6 MB/s eta 0:00:00
+Downloading packaging-24.0-py3-none-any.whl (53 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 53.5/53.5 kB 1.9 MB/s eta 0:00:00
+Downloading pandas-2.2.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (12.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.7/12.7 MB 3.9 MB/s eta 0:00:00
+Downloading pillow-10.2.0-cp312-cp312-manylinux_2_28_x86_64.whl (4.5 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.5/4.5 MB 3.9 MB/s eta 0:00:00
+Downloading pyparsing-3.1.2-py3-none-any.whl (103 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 103.2/103.2 kB 3.2 MB/s eta 0:00:00
+Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 229.9/229.9 kB 2.7 MB/s eta 0:00:00
+Downloading pytz-2024.1-py2.py3-none-any.whl (505 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 505.5/505.5 kB 5.0 MB/s eta 0:00:00
+Downloading scikit_learn-1.4.1.post1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (12.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.2/12.2 MB 4.3 MB/s eta 0:00:00
+Downloading scipy-1.12.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (37.8 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 37.8/37.8 MB 4.5 MB/s eta 0:00:00
+Downloading six-1.16.0-py2.py3-none-any.whl (11 kB)
+Downloading sixer-1.6.1-py3-none-any.whl (20 kB)
+Downloading threadpoolctl-3.4.0-py3-none-any.whl (17 kB)
+Downloading tzdata-2024.1-py2.py3-none-any.whl (345 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 345.4/345.4 kB 4.5 MB/s eta 0:00:00
+Installing collected packages: sixer, pytz, tzdata, threadpoolctl, six, pyparsing, pillow, packaging, numpy, kiwisolver, joblib, fonttools, cycler, scipy, python-dateutil, contourpy, scikit-learn, pandas, matplotlib
+Successfully installed contourpy-1.2.0 cycler-0.12.1 fonttools-4.50.0 joblib-1.3.2 kiwisolver-1.4.5 matplotlib-3.8.3 numpy-1.26.4 packaging-24.0 pandas-2.2.1 pillow-10.2.0 pyparsing-3.1.2 python-dateutil-2.9.0.post0 pytz-2024.1 scikit-learn-1.4.1.post1 scipy-1.12.0 six-1.16.0 sixer-1.6.1 threadpoolctl-3.4.0 tzdata-2024.1
+
+done
+#
+# To activate this environment, use
+#
+#     $ conda activate mle-dev
+#
+# To deactivate an active environment, use
+#
+#     $ conda deactivate
+
+(base) admin123@TIGER01189:/d/suvedharan/Assignment-1/mle-training$ conda activate mle-dev
+(mle-dev) admin123@TIGER01189:/d/suvedharan/Assignment-1/mle-training$ ll
+total 1021408
+drwxrwxrwx 1 admin123 admin123      4096 Mar 27 17:58 ./
+drwxrwxrwx 1 admin123 admin123      4096 Mar 26 18:10 ../
+drwxrwxrwx 1 admin123 admin123      4096 Mar 27 16:20 .git/
+-rwxrwxrwx 1 admin123 admin123       105 Mar 26 18:06 .gitignore*
+drwxrwxrwx 1 admin123 admin123      4096 Mar 26 12:45 .vscode/
+-rw-r--r-- 1 admin123 admin123 901858012 Mar 20  2023 Anaconda3-2023.03-Linux-x86_64.sh
+-rwxrwxrwx 1 admin123 admin123 144041912 Mar 27 17:14 Miniconda3-latest-Linux-x86_64.sh*
+-rwxrwxrwx 1 admin123 admin123      1511 Mar 26 18:00 README.md*
+drwxrwxrwx 1 admin123 admin123      4096 Mar 26 13:05 datasets/
+-rwxrwxrwx 1 admin123 admin123       627 Mar 27 17:57 environment.yml*
+-rwxrwxrwx 1 admin123 admin123      6899 Mar 27 14:10 nonstandardcode.py*
+(mle-dev) admin123@TIGER01189:/d/suvedharan/Assignment-1/mle-training$ git status
+On branch 3-assignment-format-python-script
+Your branch is up to date with 'origin/3-assignment-format-python-script'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   .gitignore
+        modified:   README.md
+        modified:   environment.yml
+        modified:   nonstandardcode.py
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Anaconda3-2023.03-Linux-x86_64.sh
+        Miniconda3-latest-Linux-x86_64.sh
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(mle-dev) admin123@TIGER01189:/d/suvedharan/Assignment-1/mle-training$ git status
+On branch 3-assignment-format-python-script
+Your branch is up to date with 'origin/3-assignment-format-python-script'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   .gitignore
+        modified:   README.md
+        modified:   environment.yml
+        modified:   nonstandardcode.py
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(mle-dev) admin123@TIGER01189:/d/suvedharan/Assignment-1/mle-training$
