@@ -24,8 +24,8 @@ jobs:
       run: |
         conda init bash
         source ~/.bashrc
-        conda activate myenv
+        conda activate mle-dev
 
     - name: Execute commands within Conda environment
       run: |
-        conda run -n myenv python nonstandardcode.py
+        conda run -n mle-dev python nonstandardcode.py
