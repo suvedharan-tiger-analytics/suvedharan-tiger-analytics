@@ -15,8 +15,8 @@ jobs:
     - name: Set up Miniconda
       uses: conda-incubator/setup-miniconda@v2
       with:
-        activate-environment: myenv  # Name of the conda environment
-        environment-file: environment.yml  # Path to your environment.yml file relative to repository root
+        activate-environment: myenv  
+        environment-file: environment.yml  
 
     - name: Install dependencies
       run: |
