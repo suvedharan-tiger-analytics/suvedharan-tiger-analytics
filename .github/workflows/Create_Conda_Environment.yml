@@ -18,7 +18,7 @@ jobs:
     - name: Build Package
       run: |
         echo "Building package..."
-        # Add your package building commands here
+        python setup.py bdist_wheel
 
     - name: Display directory tree after building
       run: tree
